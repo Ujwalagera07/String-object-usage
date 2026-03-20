@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html><body>
+<h3>String Object Demo</h3>
+<button onclick="showString()">Show String Methods</button>
+<pre id="out"></pre>
+
+<script>
+let name = "Reethika";
+
+function showString() {
+    let res = '';
+    
+    // Properties
+    res += 'Length: ' + name.length + '\n';
+    
+    // Methods
+    res += '\nMethods:\n';
+    res += 'Upper: ' + name.toUpperCase() + '\n';
+    res += 'Lower: ' + name.toLowerCase() + '\n';
+    res += 'CharAt(0): ' + name.charAt(0) + '\n';
+    res += 'IndexOf(e): ' + name.indexOf('e') + '\n';
+    res += 'Substring(0,4): ' + name.substring(0,4) + '\n';
+    res += 'Split: ' + name.split('').join(' | ') + '\n';
+    res += 'Replace(i,k): ' + name.replace('i','k') + '\n';
+    
+    document.getElementById('out').textContent = res;
+}
+</script>
+</body></html>
